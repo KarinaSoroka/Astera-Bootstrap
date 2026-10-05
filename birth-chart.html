@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Birth Chart - Astera</title>
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <a class="visually-hidden-focusable" href="#main-content">
+        Skip to main content
+    </a>
+
+    <nav class="navbar navbar-expand-md bg-light">
+        <div class="container">
+
+            <a class="navbar-brand" href="index.html">
+                Astera
+            </a>
+
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#mainNavbar"
+                aria-controls="mainNavbar"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNavbar">
+
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">
+                            Home
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a
+                            class="nav-link active"
+                            aria-current="page"
+                            href="birth-chart.html">
+                            Birth Chart
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">
+                            About
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+    </nav>
+
+    <main id="main-content" class="container mt-5">
+
+        <h1>Create Your Birth Chart</h1>
+
+        <p>Enter your birth details below.</p>
+
+        <button
+            class="btn btn-outline-secondary mb-3"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#birthChartInfo"
+            aria-expanded="false"
+            aria-controls="birthChartInfo">
+
+            What is a Birth (Natal) Chart?
+
+        </button>
+
+        <div class="collapse mb-4" id="birthChartInfo">
+
+            <div class="card card-body">
+
+                A birth chart, also called a natal chart, is based on the
+                date, time and place of birth. It shows the positions of
+                the planets at the time a person was born.
+
+            </div>
+
+        </div>
+
+        <form id="birthChartForm">
+
+            <div class="row">
+
+                <div class="col-md-6 mb-3">
+
+                    <label for="name" class="form-label">
+                        Your name
+                    </label>
+
+                    <input
+                        type="text"
+                        class="form-control"
+                        id="name"
+                        name="name"
+                        required>
+
+                </div>
+
+                <div class="col-md-6 mb-3">
+
+                    <label for="birthdate" class="form-label">
+                        Date of birth
+                    </label>
+
+                    <input
+                        type="date"
+                        class="form-control"
+                        id="birthdate"
+                        name="birthdate"
+                        required>
+
+                </div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="col-md-6 mb-3">
+
+                    <label for="birthtime" class="form-label">
+                        Time of birth
+                    </label>
+
+                    <input
+                        type="time"
+                        class="form-control"
+                        id="birthtime"
+                        name="birthtime">
+
+                </div>
+
+                <div class="col-md-6 mb-3">
+
+                    <label for="birthplace" class="form-label">
+                        Place of birth
+                    </label>
+
+                    <input
+                        type="text"
+                        class="form-control"
+                        id="birthplace"
+                        name="birthplace"
+                        required>
+
+                </div>
+
+            </div>
+
+            <div class="mb-3">
+
+                <label for="email" class="form-label">
+                    Email
+                </label>
+
+                <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    name="email"
+                    required>
+
+            </div>
+
+            <button type="submit" class="btn btn-primary">
+                Create Birth Chart
+            </button>
+
+        </form>
+
+        <div class="mt-4">
+
+            <p id="zodiac-result"></p>
+
+            <h2 class="h4">Today's Horoscope</h2>
+
+            <p id="horoscope-result"></p>
+
+            <a id="api-credit" href="" target="_blank"></a>
+
+        </div>
+
+    </main>
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
